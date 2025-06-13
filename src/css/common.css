@@ -36,6 +36,18 @@ body {
   text-align: center;
 }
 
+.explore-more-link {
+  display: block;
+  text-decoration: none;
+  color: #10152E;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-top: 28px;
+  text-transform: capitalize;
+}
+
 
 /* Container */
 .container {
@@ -89,6 +101,34 @@ body {
 @media screen and (max-width: 767px) {
   .blog-grid {
     grid-template-columns: inherit;
+  }
+}
+
+.row {
+  display: flex;
+  /* gap: 20px; */
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 8px;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding: 0 8px;
+}
+
+@media (max-width: 767px) {
+
+  .col-3,
+  .col-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 

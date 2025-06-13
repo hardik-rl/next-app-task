@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
+    margin-top: 28px;
     padding-bottom: 24px;
     border-bottom: 1px solid #E5E6EA
 }
@@ -124,6 +125,7 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 /* .post-testimonial__btn button:hover svg mask {
     fill: #fff;
 } */
@@ -141,4 +143,36 @@
 
 .post-testimonial__btn div:last-child button {
     margin-left: auto;
+}
+
+/* Right Sidebar */
+.post-card {
+    margin-top: 40px;
+}
+
+.post-card__content {
+    margin-top: 25px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.post-card__content span:first-child {
+    font-weight: 500;
+    color: #000000;
+}
+.post-card__content span:nth-child(2) {
+    color: #DEDEDE;
+}
+
+.post-card__content span:last-child {
+    color: #757575;
+}
+
+.post-card p {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 24px;
+    color: #121212;
 }
