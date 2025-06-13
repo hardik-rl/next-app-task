@@ -1,10 +1,10 @@
 import MyFirstPost from '@/sections/blog/MyFirstPost'
 import React from 'react'
 
-const page = () => {
+const blogPostPage = () => {
   return (
     <MyFirstPost />
   )
 }
 
-export default page
+export default blogPostPage

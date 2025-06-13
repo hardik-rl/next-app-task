@@ -1,4 +1,6 @@
-import HeadingLg from "@/components/HeadingLg";
+// import "../css/font.css";
+// import "../css/common.css";
+import HeadingLg from "@/shared/HeadingLg";
 import Link from "next/link";
 
 export default function Home() {

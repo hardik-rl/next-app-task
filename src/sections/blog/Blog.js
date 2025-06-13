@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from "@/components/Card";
-import HeadingLg from "@/components/HeadingLg";
+import Card from "@/shared/Card";
+import HeadingLg from "@/shared/HeadingLg";
 import blog1Img from "../../../public/images/blog1.png"
 
 const Blog = () => {
