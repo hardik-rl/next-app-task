@@ -4,13 +4,13 @@ import HeadingLg from '@/shared/HeadingLg'
 import bannerImg from "../../../public/images/banner.png"
 import Image from 'next/image'
 import Testimonial from './Testimonial'
-import PostCard from './PostCard'
 import Link from 'next/link'
 import TourGuideList from './TourGuideList'
 import Comments from './Comments'
+import PostCard from './PostCard'
+import ArticlesCard from '@/shared/ArticlesCard'
 
 const MyFirstPost = () => {
-
     return (
         <section className="bg-white">
             <nav className="breadcrumb pt-64">
@@ -90,6 +90,12 @@ const MyFirstPost = () => {
             <div className='container'>
                 <Comments />
             </div>
+            <section className='related-articles'>
+                <HeadingLg>Related Articles</HeadingLg>
+                <div className='container px-0'>
+                    <ArticlesCard />
+                </div>
+            </section>
         </section>
     )
 }

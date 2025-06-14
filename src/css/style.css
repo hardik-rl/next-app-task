@@ -407,6 +407,12 @@ textarea {
     gap: 15px;
 }
 
+.related-articles {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #F5F5F6;
+}
+
 @media screen and (max-width: 767px) {
     .comments__feedback-row {
         flex-direction: column;

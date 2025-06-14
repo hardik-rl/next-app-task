@@ -16,6 +16,10 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
 .mb-64 {
   margin-bottom: 64px;
@@ -143,6 +147,7 @@ body {
 }
 
 .articles-card:hover {
+  transition: all 0.3s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
@@ -154,7 +159,13 @@ body {
 }
 
 .articles-card__content {
-  padding: 16px;
+  /* padding: 16px; */
+  margin-top: 12px;
+}
+
+.articles-card:hover .articles-card__content {
+   padding: 8px;
+    transition: ease-in-out 0.3s;
 }
 
 .articles-card__content h3 {
@@ -172,8 +183,8 @@ body {
 }
 
 .articles-card__author {
-  font-size: 13px;
-  color: #374151;
+  font-size: 14px;
+  color: #000000;
   font-weight: 500;
 }
 
@@ -222,8 +233,8 @@ body {
 }
 @media (max-width: 767px) {
   .heading-lg {
-    font-size: 34px;
-    line-height: 34px;
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 
