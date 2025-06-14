@@ -1,4 +1,4 @@
-import MyFirstPost from '@/sections/blog/MyFirstPost'
+import MyFirstPost from '@/components/blog/MyFirstPost'
 import React from 'react'
 
 const blogPostPage = () => {
