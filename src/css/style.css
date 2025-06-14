@@ -321,12 +321,6 @@
     margin-bottom: 12px;
 }
 
-@media screen and (max-width: 767px) {
-    .comment-form {
-        flex-direction: column;
-    }
-}
-
 .comment-form__row {
     display: flex;
     flex-direction: column;
@@ -372,16 +366,19 @@ textarea {
     border-radius: 12px;
     background-color: #F5F5F5;
 }
+
 .comments__feedback label {
     font-size: 16px;
     font-weight: 500;
 }
+
 .comments__feedback-rating-options {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 24px;
 }
+
 .comments__feedback-rating-options span {
     cursor: pointer;
     font-size: 16px;
@@ -413,7 +410,38 @@ textarea {
     background-color: #F5F5F6;
 }
 
+/* Media Query For Mobile */
 @media screen and (max-width: 767px) {
+    .hero-banner img {
+        height: 180px;
+        object-position: 80%;
+    }
+
+    .post-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .explore-more-link {
+        margin-top: 32px;
+    }
+
+    .comments-add {
+        padding-bottom: 0;
+    }
+
+    .post-card {
+        margin-top: 30px;
+    }
+
+    .comments-card__content {
+        flex-wrap: wrap;
+    }
+
+    .post-testimonial__btn div p {
+        display: none;
+    }
+
     .comments__feedback-row {
         flex-direction: column;
         gap: 25px;
@@ -427,12 +455,22 @@ textarea {
         margin-left: 0;
     }
 
-    .comments__feedback-rating-options {    
+    .comments__feedback-rating-options {
         gap: 14px;
     }
 
     .btn--align {
         width: 100%;
         justify-content: center;
+    }
+
+    .comment-form {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 12px;
+    }
+
+    textarea {
+        margin-bottom: 0;
     }
 }

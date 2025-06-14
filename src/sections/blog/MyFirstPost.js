@@ -1,7 +1,8 @@
 "use client"
 import React from 'react'
 import HeadingLg from '@/shared/HeadingLg'
-import bannerImg from "../../../public/images/banner.png"
+import bannerImg from "../../../public/images/banner.png";
+import avatar from "../../../public/images/alex.jpg";
 import Image from 'next/image'
 import Testimonial from './Testimonial'
 import Link from 'next/link'
@@ -28,7 +29,7 @@ const MyFirstPost = () => {
                     <div className="col-9">
                         <div className="post-header">
                             <div className="post-header__author">
-                                <Image src={bannerImg} alt="Author avatar" width={50} height={50} />
+                                <Image src={avatar} alt="Author avatar" width={50} height={50} />
                                 <span>Alex Carter</span>
                             </div>
                             <span className="post-header__date">23 January 2025</span>
