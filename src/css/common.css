@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: 'Lato Regular';
+  font-family: 'Lato';
+  font-weight: 400;
 }
 
 /* Utility Class */
@@ -183,8 +184,8 @@ body {
   background-color: #000000;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 12px;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
@@ -196,13 +197,29 @@ body {
   color: #000;
 }
 
+.btn.btn--success {
+    background-color: #00BA5C;
+}
+.btn--align {
+    display: flex;
+    gap: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
 /* Main Heading */
 .heading-lg {
   font-weight: 600;
   color: #262D4D;
   text-align: center;
 }
-
+.heading-md {
+  font-weight: 600;
+  color: #10152E;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
 @media (max-width: 767px) {
   .heading-lg {
     font-size: 34px;

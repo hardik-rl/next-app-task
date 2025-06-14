@@ -1,3 +1,5 @@
+import HeadingLg from '@/shared/HeadingLg';
+import HeadingMd from '@/shared/HeadingMd';
 import { LocationIcon, StarFillIcon, StarOutlineIcon } from '@/shared/Icon';
 import React from 'react';
 
@@ -25,7 +27,7 @@ const guides = [
 const TourGuideList = () => {
   return (
     <div className="tour-guide">
-      <h3>Tour Guides</h3>
+      <HeadingMd>Tour Guides</HeadingMd>
       {guides.map((guide, index) => (
         <div className="tour-guide__card" key={index}>
           <div>

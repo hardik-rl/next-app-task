@@ -63,8 +63,8 @@
 /* Slider Testimonial */
 .post-testimonial {
     position: relative;
-    max-width: 800px;
-    margin: auto;
+    /* max-width: 800px; */
+    /* margin: auto; */
     /* overflow: hidden; */
 }
 
@@ -162,6 +162,7 @@
     font-weight: 500;
     color: #000000;
 }
+
 .post-card__content span:nth-child(2) {
     color: #DEDEDE;
 }
@@ -183,6 +184,7 @@
     max-height: 450px;
     overflow-y: auto;
 }
+
 .tour-guide h3 {
     color: #10152E;
     font-size: 20px;
@@ -190,12 +192,14 @@
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
 .tour-guide__card {
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #DEDEDE;
 }
-.tour-guide__card > div:first-child {
+
+.tour-guide__card>div:first-child {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -231,6 +235,7 @@
     gap: 4.93px;
     margin-top: 4px;
 }
+
 .tour-guide__card p svg {
     width: 18px;
     height: 18px;
@@ -244,10 +249,184 @@
     align-items: center;
     gap: 5.6px;
 }
-.tour-guide__card-rating span { 
+
+.tour-guide__card-rating span {
     margin-left: 4.4px;
 }
+
 .tour-guide__card-rating svg {
     width: 15px;
     height: 15px;
+}
+
+.comments {
+    margin-top: 60px;
+}
+
+.comments h3 {
+    margin-bottom: 30px;
+}
+
+.comments-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.comments-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.comments-card__content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.comments-card__content span {
+    color: #000000;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+
+.comments-card__content .tour-guide__card-rating {
+    margin-top: 0;
+}
+
+
+.comments-card__content-text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #10152E;
+    opacity: 0.8;
+}
+
+.comments-add {
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+.comment-form {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width: 767px) {
+    .comment-form {
+        flex-direction: column;
+    }
+}
+
+.comment-form__row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.comment-form input {
+    flex: 1;
+    padding: 16px;
+    background-color: #F5F5F5;
+    border: 0;
+    border-radius: 12px;
+    outline: none;
+}
+
+.comment-form__row label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #3E3232;
+    letter-spacing: 1px;
+}
+
+textarea {
+    outline: none;
+    width: 100%;
+    /* height: 80px; */
+    padding: 16px;
+    border-radius: 12px;
+    border: 0;
+    background-color: #F5F5F5;
+    margin-bottom: 12px;
+}
+
+.comments__feedback {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    background-color: #F5F5F5;
+}
+.comments__feedback label {
+    font-size: 16px;
+    font-weight: 500;
+}
+.comments__feedback-rating-options {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.comments__feedback-rating-options span {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.comments__feedback-rating-options button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.comments__feedback-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.comments__feedback-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .comments__feedback-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .comments__feedback {
+        justify-content: center;
+    }
+
+    .comments__feedback-right {
+        margin-left: 0;
+    }
+
+    .comments__feedback-rating-options {    
+        gap: 14px;
+    }
+
+    .btn--align {
+        width: 100%;
+        justify-content: center;
+    }
 }

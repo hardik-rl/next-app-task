@@ -7,6 +7,7 @@ import Testimonial from './Testimonial'
 import PostCard from './PostCard'
 import Link from 'next/link'
 import TourGuideList from './TourGuideList'
+import Comments from './Comments'
 
 const MyFirstPost = () => {
 
@@ -23,7 +24,7 @@ const MyFirstPost = () => {
                 <Image src={bannerImg} alt="banner" />
             </div>
             <div className="container">
-                <div class="row">
+                <div className="row">
                     <div className="col-9">
                         <div className="post-header">
                             <div className="post-header__author">
@@ -60,10 +61,9 @@ const MyFirstPost = () => {
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                             </p>
                         </div>
-
                         <Testimonial />
                     </div>
-                    <div class="col-3">
+                    <div className="col-3">
                         <Link href={"#0"} className="explore-more-link">Explore more</Link>
                         <PostCard
                             image="https://picsum.photos/512/300"
@@ -86,6 +86,9 @@ const MyFirstPost = () => {
                         <TourGuideList />
                     </div>
                 </div>
+            </div>
+            <div className='container'>
+                <Comments />
             </div>
         </section>
     )
