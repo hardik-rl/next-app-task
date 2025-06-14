@@ -4,13 +4,14 @@ import FormControl from '@/shared/FormControl'
 import HeadingMd from '@/shared/HeadingMd'
 import { GoodIcon, MsgIcon, StarFillIcon } from '@/shared/Icon'
 import React from 'react'
+import CommentList from '../CommentList'
 
 const Comments = () => {
   return (
     <section className="comments">
       <HeadingMd>Comments</HeadingMd>
 
-      <div className="comments-card">
+      {/* <div className="comments-card">
         <img src="https://i.pravatar.cc/40?img=1" alt="user" />
         <div>
           <div className="comments-card__content">
@@ -23,15 +24,13 @@ const Comments = () => {
               <StarFillIcon />
               <span>(5.0)</span>
             </div>
-            {/* <span>★★★★★</span>
-            <span>(5.0)</span>
-            <span>22 Jul 2022</span> */}
           </div>
           <p className="comments-card__content-text">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
           </p>
         </div>
-      </div>
+      </div> */}
+      <CommentList />
 
       <div className="comments-add">
         <HeadingMd>Add A Comment</HeadingMd>

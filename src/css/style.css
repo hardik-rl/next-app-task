@@ -138,6 +138,7 @@
 .post-testimonial__btn div:first-child button:hover svg {
     transform: translateX(-4px);
 }
+
 .post-testimonial__btn div:last-child button:hover svg {
     transform: translateX(4px);
 }
@@ -161,6 +162,7 @@
 .post-card {
     margin-top: 30px;
 }
+
 .post-card:hover img {
     opacity: 0.7;
     cursor: pointer;
@@ -313,6 +315,12 @@
     letter-spacing: 1px;
 }
 
+.comments-card__content span:last-child {
+    margin-left: auto;
+    font-size: 14px;
+    color: #757575;
+}
+
 .comments-card__content .tour-guide__card-rating {
     margin-top: 0;
 }
@@ -350,6 +358,7 @@
     font-weight: 500;
     font-size: 16px;
     color: #3E3232;
+    margin-left: 2px;
     letter-spacing: 1px;
 }
 
@@ -408,6 +417,98 @@
 }
 
 
+
+/* Comment List */
+
+.comment-list,
+.skeleton-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.comment-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment-text {
+    color: #555;
+    font-size: 15px;
+}
+
+.no-comments {
+    color: #888;
+}
+
+.error-box {
+    background-color: #ffe6e6;
+    border: 1px solid #ff9999;
+    color: #cc0000;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.retry-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.retry-btn:hover {
+    background-color: #990000;
+}
+
+/* Skeleton styles */
+.skeleton-list__item {
+    margin-bottom: 20px;
+}
+
+.skeleton-list__item-row {
+    background-color: #eee;
+    border-radius: 4px;
+    animation: pulse 1.4s ease-in-out infinite;
+}
+
+.skeleton-list__item-row.name {
+    width: 30%;
+    height: 16px;
+    margin-bottom: 10px;
+}
+
+.skeleton-list__item-row.line {
+    width: 100%;
+    height: 12px;
+    margin-bottom: 6px;
+}
+
+.skeleton-list__item-row.line.short {
+    width: 70%;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #eee;
+    }
+
+    50% {
+        background-color: #ddd;
+    }
+
+    100% {
+        background-color: #eee;
+    }
+}
+
 /* Tablet  */
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -438,6 +539,10 @@
     .hero-banner img {
         height: 180px;
         object-position: 80%;
+    }
+
+    .comments-card__content span:last-child {
+        margin-left: 0;
     }
 
     .post-header {
