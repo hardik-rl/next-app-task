@@ -410,6 +410,28 @@ textarea {
     background-color: #F5F5F6;
 }
 
+
+/* Tablet  */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero-banner img {
+        height: 232px;
+    }
+    .comment-form {
+        margin-bottom: 0;
+    }
+    .comments__feedback-rating-options {
+        gap: 12px;
+    }
+    .comments__feedback {
+        padding-right: 4px;
+    }
+    .comments__feedback-rating-options button {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+
 /* Media Query For Mobile */
 @media screen and (max-width: 767px) {
     .hero-banner img {

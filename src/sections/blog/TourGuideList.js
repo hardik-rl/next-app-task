@@ -1,26 +1,29 @@
-import HeadingLg from '@/shared/HeadingLg';
 import HeadingMd from '@/shared/HeadingMd';
 import { LocationIcon, StarFillIcon, StarOutlineIcon } from '@/shared/Icon';
 import React from 'react';
+import guide1 from "../../../public/images/guide1.png";
+import guide2 from "../../../public/images/guide2.png";
+import guide3 from "../../../public/images/guide3.png";
+import Image from 'next/image';
 
 const guides = [
   {
     name: 'Miranda Rachel',
     location: 'Jombang, Jawa timur',
     rating: 4,
-    image: 'https://picsum.photos/512/300',
+    image: guide1,
   },
   {
     name: 'Danielle Marsh',
     location: 'Wonosobo, Jawa tengah',
     rating: 4,
-    image: 'https://picsum.photos/512/300',
+    image: guide2,
   },
   {
     name: 'Kang Haerin',
     location: 'Bandung, Jawa barat',
     rating: 5,
-    image: 'https://picsum.photos/512/300',
+    image: guide3,
   },
 ];
 
@@ -31,7 +34,7 @@ const TourGuideList = () => {
       {guides.map((guide, index) => (
         <div className="tour-guide__card" key={index}>
           <div>
-            <img src={guide.image} alt={guide.name} />
+            <Image src={guide.image} alt={guide.name} />
             <div className="flex-1">
               <h4>{guide.name}</h4>
               <p>
@@ -40,6 +43,7 @@ const TourGuideList = () => {
             </div>
           </div>
           <div className="tour-guide__card-rating">
+            <StarFillIcon />
             <StarFillIcon />
             <StarFillIcon />
             <StarFillIcon />
