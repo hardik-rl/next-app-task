@@ -118,17 +118,29 @@
     background-color: #fff;
     border: 1px solid #05091C;
     border-radius: 2px;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
     transition: all 0.3s;
 }
 
-.post-testimonial__btn button:hover {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
+.post-testimonial__btn button svg {
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
-/* .post-testimonial__btn button:hover svg mask {
-    fill: #fff;
-} */
+.post-testimonial__btn div:first-child button:hover svg {
+    transform: translateX(-4px);
+}
+.post-testimonial__btn div:last-child button:hover svg {
+    transform: translateX(4px);
+}
 
 .post-testimonial__btn div p {
     margin-top: 8px;
@@ -147,7 +159,12 @@
 
 /* Right Sidebar */
 .post-card {
-    margin-top: 40px;
+    margin-top: 30px;
+}
+.post-card:hover img {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.5s;
 }
 
 .post-card__content {
@@ -329,31 +346,11 @@
     margin-bottom: 20px;
 }
 
-.comment-form input {
-    flex: 1;
-    padding: 16px;
-    background-color: #F5F5F5;
-    border: 0;
-    border-radius: 12px;
-    outline: none;
-}
-
 .comment-form__row label {
     font-weight: 500;
     font-size: 16px;
     color: #3E3232;
     letter-spacing: 1px;
-}
-
-textarea {
-    outline: none;
-    width: 100%;
-    /* height: 80px; */
-    padding: 16px;
-    border-radius: 12px;
-    border: 0;
-    background-color: #F5F5F5;
-    margin-bottom: 12px;
 }
 
 .comments__feedback {
@@ -417,15 +414,19 @@ textarea {
     .hero-banner img {
         height: 232px;
     }
+
     .comment-form {
         margin-bottom: 0;
     }
+
     .comments__feedback-rating-options {
         gap: 12px;
     }
+
     .comments__feedback {
         padding-right: 4px;
     }
+
     .comments__feedback-rating-options button {
         padding-left: 14px;
         padding-right: 14px;

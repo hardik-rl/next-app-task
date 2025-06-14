@@ -1,5 +1,3 @@
-// import "../css/font.css";
-// import "../css/common.css";
 import HeadingLg from "@/shared/HeadingLg";
 import Link from "next/link";
 
@@ -8,7 +6,9 @@ export default function Home() {
     <section className="bg-white h-100">
       <div className="container py-60">
         <HeadingLg>Welcome To Home</HeadingLg>
-        <div className="text-center"><Link href={"/blog"}>Navigation To Blog Page</Link></div>
+        <div className="text-center">
+          <Link href={"/blog"} className="explore-more-link">Explore Our Blog</Link>
+        </div>
       </div>
     </section>
   );
