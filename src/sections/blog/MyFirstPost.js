@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Testimonial from './Testimonial'
 import PostCard from './PostCard'
 import Link from 'next/link'
+import TourGuideList from './TourGuideList'
 
 const MyFirstPost = () => {
 
@@ -82,7 +83,7 @@ const MyFirstPost = () => {
                             date="22 July 2022"
                             description="The lush green surroundings of the campgrounds create a.."
                         />
-
+                        <TourGuideList />
                     </div>
                 </div>
             </div>

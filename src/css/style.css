@@ -176,3 +176,78 @@
     line-height: 24px;
     color: #121212;
 }
+
+
+.tour-guide {
+    margin-top: 100px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+.tour-guide h3 {
+    color: #10152E;
+    font-size: 20px;
+    line-height: 28.13px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.tour-guide__card {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #DEDEDE;
+}
+.tour-guide__card > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tour-guide__card:last-child {
+    border-bottom: none;
+}
+
+.tour-guide__card img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.tour-guide__card h4 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.tour-guide__card p {
+    font-size: 14px;
+    color: #000;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    gap: 4.93px;
+    margin-top: 4px;
+}
+.tour-guide__card p svg {
+    width: 18px;
+    height: 18px;
+}
+
+.tour-guide__card-rating {
+    margin-top: 15px;
+    color: #121212;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5.6px;
+}
+.tour-guide__card-rating span { 
+    margin-left: 4.4px;
+}
+.tour-guide__card-rating svg {
+    width: 15px;
+    height: 15px;
+}
