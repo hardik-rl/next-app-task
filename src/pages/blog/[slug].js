@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { blogPosts } from "../data/blogData";
 import { StarFillIcon } from "@/shared/Icon";
 import MyFirstPost from "@/components/blog/MyFirstPost";
 import HeadingLg from "@/shared/HeadingLg";
 import ArticlesCard from "@/shared/ArticlesCard";
 import HeadingMd from "@/shared/HeadingMd";
 import Comments from "@/components/blog/Comments";
+import { blogPosts } from "@/data/blogData";
 
 const BlogPage = ({ post }) => {
     const router = useRouter();
