@@ -206,8 +206,14 @@ body {
 
 .articles-card__content h3 {
   font-size: 20px;
+  line-height: 30px;
   font-weight: 600;
   color: #10152E;
+   display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .articles-card__description {
@@ -216,6 +222,11 @@ body {
   color: #4E5265;
   margin-top: 12px;
   margin-bottom: 12px;
+   display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .articles-card__author {

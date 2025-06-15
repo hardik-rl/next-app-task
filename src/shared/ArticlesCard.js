@@ -14,21 +14,21 @@ const ArticlesCard = () => {
             "image": blog1Img
         },
         {
-            "title": "HIIT Workout for Busy Schedules",
-            "description": "A 15-minute high-intensity interval training session to boost metabolism and burn fat fast.",
-            "author": "Samantha Reed",
+            "title": "5 Tips for Better Cardio Sessions",
+            "description": "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
+            "author": "Maya Lee",
             "image": blog2Img
         },
         {
-            "title": "HIIT Workout for Busy Schedules",
-            "description": "A 15-minute high-intensity interval training session to boost metabolism and burn fat fast.",
-            "author": "Samantha Reed",
+            "title": "Meal Prep Basics for Gym Enthusiasts",
+            "description": "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
+            "author": "Jordan Smith",
             "image": blog3Img
         },
         {
-            "title": "HIIT Workout for Busy Schedules",
-            "description": "A 15-minute high-intensity interval training session to boost metabolism and burn fat fast.",
-            "author": "Samantha Reed",
+            "title": "Building Core Strength: Exercises and Benefits",
+            "description": "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
+            "author": "Emma Rodriguez",
             "image": blog4Img
         }
     ]
