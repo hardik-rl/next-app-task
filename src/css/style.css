@@ -294,10 +294,10 @@
     padding-bottom: 30px;
     border-bottom: 1px solid #DEDEDE;
 }
-.comments .comments-card:last-child {
+/* .comments .comments-card:last-child {
     border-bottom: transparent;
     padding-bottom: 0;
-}
+} */
 
 .comments-card img {
     width: 60px;
@@ -552,7 +552,7 @@
 /* Media Query For Mobile */
 @media screen and (max-width: 767px) {
     .hero-banner img {
-        height: 180px;
+        height: 179px;
         object-position: 80%;
     }
 
