@@ -15,6 +15,7 @@ const Comments = () => {
 
   const [comments, setComments] = useState([]);
   const [rating, setRating] = useState("😁");
+  const [showToast, setShowToast] = useState(false);
 
   const handleChange = (field) => (e) => {
     setFormData((prev) => ({
@@ -34,11 +35,17 @@ const Comments = () => {
       rating,
       date: new Date().toLocaleDateString("en-GB"),
     };
-
     setComments([newComment, ...comments]);
 
     setFormData({ name: "", email: "", text: "" });
     setRating("😁");
+    setShowToast(false);
+
+    setTimeout(() => {
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 3000);
+    }, 10);
+
   };
 
   return (
@@ -132,6 +139,10 @@ const Comments = () => {
           </div>
         </form>
       </div>
+
+      {showToast && (
+        <div className="toast">Thank you! Your comment has been posted</div>
+      )}
 
     </section>
   );
