@@ -8,8 +8,8 @@ import CommentList from '../CommentList'
 
 const Comments = () => {
   return (
-    <section className="comments">
-      <HeadingMd>Comments</HeadingMd>
+    <section>
+      {/* <HeadingMd>Comments</HeadingMd> */}
 
       {/* <div className="comments-card">
         <img src="https://i.pravatar.cc/40?img=1" alt="user" />
@@ -30,7 +30,7 @@ const Comments = () => {
           </p>
         </div>
       </div> */}
-      <CommentList />
+      {/* <CommentList /> */}
 
       <div className="comments-add">
         <HeadingMd>Add A Comment</HeadingMd>

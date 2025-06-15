@@ -279,7 +279,7 @@
 }
 
 .comments {
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .comments h3 {
@@ -337,6 +337,9 @@
 .comments-add {
     margin-top: 40px;
     padding-bottom: 30px;
+}
+.comments-add h3 {
+    margin-bottom: 30px;
 }
 
 .comment-form {

@@ -378,12 +378,19 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 1px;
   width: 0;
   background: #000;
   transition: width 0.4s ease;
 }
 
 .form-control__field:focus + .form-control__field-underline {
+  width: 100%;
+}
+.form-control__field:focus {
+  background-color: transparent;
+}
+
+.w-100 {
   width: 100%;
 }

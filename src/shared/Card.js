@@ -6,7 +6,7 @@ import React from "react";
 
 const Card = ({ title, description, author, image }) => {
   return (
-    <Link className="articles-card" href={"/blog/my-first-page"}>
+    <Link className="articles-card" href={"/blog/my-first-post"}>
       <Image src={image} alt={title} />
       <div className="articles-card__content">
         <h3>{title}</h3>

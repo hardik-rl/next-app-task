@@ -88,15 +88,6 @@ const MyFirstPost = () => {
                     </div>
                 </div>
             </div>
-            <div className='container'>
-                <Comments />
-            </div>
-            <section className='related-articles'>
-                <HeadingLg>Related Articles</HeadingLg>
-                <div className='container px-0'>
-                    <ArticlesCard />
-                </div>
-            </section>
         </section>
     )
 }
