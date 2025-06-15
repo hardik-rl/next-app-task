@@ -386,6 +386,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 24px;
+    margin-left: auto;
 }
 
 .comments__feedback-rating-options span {
@@ -588,6 +589,7 @@
 
     .comments__feedback-rating-options {
         gap: 14px;
+        margin-left: 0;
     }
 
     .btn--align {
