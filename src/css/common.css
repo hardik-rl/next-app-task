@@ -108,6 +108,14 @@ body {
     max-width: 1200px;
   }
 }
+.min-h-100 {
+  min-height: 100vh;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Grid */
 .blog-grid {
