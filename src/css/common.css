@@ -343,13 +343,6 @@ body {
 
 @media (min-width: 1024px) {
   .heading-lg {
-    font-size: 42px;
-    line-height: 42px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .heading-lg {
     font-size: 48px;
     line-height: 66px;
   }
