@@ -7,6 +7,7 @@ import ArticlesCard from "@/shared/ArticlesCard";
 import HeadingMd from "@/shared/HeadingMd";
 import Comments from "@/components/blog/Comments";
 import { blogPosts } from "@/data/blogData";
+import Head from "next/head";
 
 const BlogPage = ({ post }) => {
     const router = useRouter();
@@ -39,6 +40,15 @@ const BlogPage = ({ post }) => {
 
     return (
         <>
+        <Head>
+        <title>Blog App | Blog My First Post</title>
+        <meta name="description" content="Welcome to the Articles of My Website. Explore our latest blog posts and updates." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="UTF-8" />
+        <meta name="author" content="Your Name or Company" />
+        <meta name="keywords" content="blog, homepage, next.js, articles" />
+      </Head>
+
             <MyFirstPost />
             <section className="bg-white">
                 <div className="comments container">
