@@ -34,7 +34,7 @@ const TourGuideList = () => {
       {guides.map((guide, index) => (
         <div className="tour-guide__card" key={index}>
           <div>
-            <Image src={guide.image} alt={guide.name} />
+            <Image src={guide.image} alt={guide.name} height={48} width={48} />
             <div className="flex-1">
               <h4>{guide.name}</h4>
               <p>

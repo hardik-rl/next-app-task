@@ -7,9 +7,7 @@ import Image from 'next/image'
 import Testimonial from './Testimonial'
 import Link from 'next/link'
 import TourGuideList from './TourGuideList'
-import Comments from './Comments'
 import PostCard from './PostCard'
-import ArticlesCard from '@/shared/ArticlesCard'
 
 const MyFirstPost = () => {
     return (
@@ -22,7 +20,10 @@ const MyFirstPost = () => {
             </nav>
             <HeadingLg>The Ultimate Guide to Full-Body Workouts</HeadingLg>
             <div className='hero-banner'>
-                <Image src={bannerImg} alt="banner" />
+                <Image src={bannerImg} alt="banner" width={1200}
+                    height={600}
+                    sizes="(max-width: 768px) 100vw, 1200px"
+                    priority />
             </div>
             <div className="container">
                 <div className="row">
