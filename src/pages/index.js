@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Head>
         <title>Home | Blog App</title>
-        <meta name="description" content="Welcome to the homepage of My Website. Explore our latest blog posts and updates." />
+        <meta name="description" content="index, Welcome to the homepage of My Website. Explore our latest blog posts and updates." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
         <meta name="author" content="Your Name or Company" />
