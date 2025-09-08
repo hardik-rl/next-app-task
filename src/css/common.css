@@ -41,6 +41,15 @@ body {
   text-align: center;
 }
 
+header {
+  height: 60px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #E0E0E0;
+}
+
 .explore-more-link {
   display: inline-block;
   text-decoration: none;
