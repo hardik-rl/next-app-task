@@ -1,57 +1,43 @@
-import React from 'react'
-import blog1Img from "../../public/images/blog1.png";
-import blog2Img from "../../public/images/blog2.png";
-import blog3Img from "../../public/images/blog3.png";
-import blog4Img from "../../public/images/blog4.png";
+"use client";
+import React, { useEffect, useState } from "react";
 import Card from "@/shared/Card";
-import { useUser } from '@clerk/nextjs';
+import { useUser } from "@clerk/nextjs";
 
 const ArticlesCard = () => {
     const { isSignedIn, isLoaded } = useUser();
-    const blogData = [
-        {
-            "title": "The Ultimate Guide To Full-Body Workouts",
-            "description": "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for all levels.",
-            "author": "Alex Carter",
-            "image": blog1Img,
-            // isLocked: true
-        },
-        {
-            "title": "5 Tips for Better Cardio Sessions",
-            "description": "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
-            "author": "Maya Lee",
-            "image": blog2Img
-        },
-        {
-            "title": "Meal Prep Basics for Gym Enthusiasts",
-            "description": "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
-            "author": "Jordan Smith",
-            "image": blog3Img,
-            isLocked: true
-        },
-        {
-            "title": "Building Core Strength: Exercises and Benefits",
-            "description": "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
-            "author": "Emma Rodriguez",
-            "image": blog4Img
-        }
-    ]
+    const [blogs, setBlogs] = useState([]);
+
+    useEffect(() => {
+        const fetchBlogs = async () => {
+            try {
+                const res = await fetch("/api/blogs");
+                if (!res.ok) throw new Error("Failed to fetch blogs");
+                const data = await res.json();
+                setBlogs(data);
+            } catch (error) {
+                console.error("Error fetching blogs:", error);
+            }
+        };
+
+        fetchBlogs();
+    }, []);
+
     return (
         <div className="blog-grid">
-            {
-                blogData.map((item, index) => (
-                    <Card
-                        key={index}
-                        title={item.title}
-                        description={item.description}
-                        author={item.author}
-                        image={item.image}
-                        isLocked={item.isLocked && !isSignedIn}
-                        isLoading={!isLoaded}
-                    />
-                ))}
+            {blogs.map((item) => (
+                <Card
+                    key={item.slug}
+                    title={item.title}
+                    description={item.description}
+                    author={item.author}
+                    image={item.image}
+                    slug={item.slug}
+                    isLocked={item.isLocked && !isSignedIn}
+                    isLoading={!isLoaded}
+                />
+            ))}
         </div>
-    )
-}
+    );
+};
 
-export default ArticlesCard
+export default ArticlesCard;

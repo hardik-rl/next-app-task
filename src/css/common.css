@@ -494,6 +494,14 @@ header {
   color: #888;
 }
 
+.login-btn {
+  font-size: 14px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 /* Overlay styles */
 .articles-card__overlay {
   position: absolute;
