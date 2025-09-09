@@ -4,14 +4,17 @@ import blog2Img from "../../public/images/blog2.png";
 import blog3Img from "../../public/images/blog3.png";
 import blog4Img from "../../public/images/blog4.png";
 import Card from "@/shared/Card";
+import { useUser } from '@clerk/nextjs';
 
 const ArticlesCard = () => {
+    const { isSignedIn, isLoaded } = useUser();
     const blogData = [
         {
             "title": "The Ultimate Guide To Full-Body Workouts",
             "description": "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for all levels.",
             "author": "Alex Carter",
-            "image": blog1Img
+            "image": blog1Img,
+            // isLocked: true
         },
         {
             "title": "5 Tips for Better Cardio Sessions",
@@ -23,7 +26,8 @@ const ArticlesCard = () => {
             "title": "Meal Prep Basics for Gym Enthusiasts",
             "description": "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
             "author": "Jordan Smith",
-            "image": blog3Img
+            "image": blog3Img,
+            isLocked: true
         },
         {
             "title": "Building Core Strength: Exercises and Benefits",
@@ -34,15 +38,18 @@ const ArticlesCard = () => {
     ]
     return (
         <div className="blog-grid">
-            {blogData.map((item, index) => (
-                <Card
-                    key={index}
-                    title={item.title}
-                    description={item.description}
-                    author={item.author}
-                    image={item.image}
-                />
-            ))}
+            {
+                blogData.map((item, index) => (
+                    <Card
+                        key={index}
+                        title={item.title}
+                        description={item.description}
+                        author={item.author}
+                        image={item.image}
+                        isLocked={item.isLocked && !isSignedIn}
+                        isLoading={!isLoaded}
+                    />
+                ))}
         </div>
     )
 }
