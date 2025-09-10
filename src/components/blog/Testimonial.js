@@ -3,33 +3,7 @@ import React, { useState } from 'react';
 import { LeftIcon, RightIcon } from '../../shared/Icon';
 import avatar from "../../../public/images/alex.jpg";
 
-const Testimonial = () => {
-  const testimonials = [
-    {
-      name: "Alex Carter",
-      image: avatar,
-      text:
-        "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
-    },
-    {
-      name: "Sara Bennett",
-      image: avatar,
-      text:
-        "With over a decade of experience in the fitnes by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
-    },
-    {
-      name: "Mike Johnson",
-      image: avatar,
-      text:
-        "With over a decade of experience in the fitness programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
-    },
-    {
-      name: "Emily Stone",
-      image: avatar,
-      text:
-        "With over a decade of experience in the fitness industry, Alex specializes in strength programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
-    },
-  ];
+const Testimonial = ({testimonials}) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -45,13 +19,14 @@ const Testimonial = () => {
     );
   };
 
-  const { name, image, text } = testimonials[currentIndex];
+  const { name, img, text } = testimonials[currentIndex];
+console.log({img: img}, name, text);
 
   return (
     <div className="post-testimonial">
       <div className="post-testimonial__slider">
         <h4>About {name}</h4>
-        <Image src={image} alt={name} width={100} height={100} />
+        <Image src={img} alt={name} width={100} height={100} />
         <p>{text}</p>
       </div>
       <div className="post-testimonial__btn">

@@ -4,7 +4,7 @@ import Button from "@/shared/Button";
 import FormControl from "@/shared/FormControl";
 import HeadingMd from "@/shared/HeadingMd";
 import { FourIcon, GoodIcon, MsgIcon, OneIcon, StarFillIcon, StarOutlineIcon, ThreeIcon, TwoIcon } from "@/shared/Icon";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Comments = () => {
   const [formData, setFormData] = useState({
@@ -16,6 +16,7 @@ const Comments = () => {
   const [comments, setComments] = useState([]);
   const [rating, setRating] = useState(5);
   const [showToast, setShowToast] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const handleChange = (field) => (e) => {
     setFormData((prev) => ({
@@ -66,6 +67,36 @@ const Comments = () => {
       return null;
   }
 };
+
+
+useEffect(() => {
+    setTimeout(() => {
+      setComments([
+        {
+          id: 1,
+          name: "John Doe",
+          text: "This article is really helpful! Thanks for sharing.",
+          date: "09 Sep 2025",
+          rating: 5
+        }
+      ]);
+      setLoading(false);
+    }, 1200);
+  }, []);
+
+  if (loading) {
+    return (
+      <ul className="skeleton-list">
+        {[1, 2].map((i) => (
+          <li key={i} className="skeleton-list__item">
+            <div className="skeleton-list__item-row name"></div>
+            <div className="skeleton-list__item-row line short"></div>
+            <div className="skeleton-list__item-row line"></div>
+          </li>
+        ))}
+      </ul>
+    );
+  }
 
 
   return (

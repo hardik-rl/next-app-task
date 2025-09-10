@@ -1,8 +1,10 @@
 .hero-banner img {
     width: 100%;
-    height: 560px;
-    object-fit: cover;
-    object-position: 60%;
+    /* height: 100%; */
+    /* max-height: 700; */
+    object-fit: contain;
+   
+    /* object-position: center; */
 }
 
 .post-header {
@@ -510,6 +512,33 @@
     width: 70%;
 }
 
+
+
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 6px; /* pill shape */
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 @keyframes pulse {
     0% {
         background-color: #eee;
@@ -527,9 +556,9 @@
 /* Tablet  */
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .hero-banner img {
+    /* .hero-banner img {
         height: 232px;
-    }
+    } */
 
     .comment-form {
         margin-bottom: 0;
@@ -552,8 +581,8 @@
 /* Media Query For Mobile */
 @media screen and (max-width: 767px) {
     .hero-banner img {
-        height: 179px;
-        object-position: 80%;
+        height: 300px;        
+        width: 100%;
     }
 
     .comments-card__content span:last-child {
@@ -619,3 +648,5 @@
         margin-bottom: 0;
     }
 }
+
+

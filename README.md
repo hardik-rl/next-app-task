@@ -1,6 +1,6 @@
-# Next.js Blog Task ✍️
+# Next.js Blog ✍️
 
-This is a simple blog project built with **Next.js 15**, featuring a clean UI, comment system, star-based rating, and basic user interactions. The app supports static blog content and user feedback via comments.
+A simple and clean blog project built with Next.js 15, featuring static blog content, a comment system, star-based rating, and authentication for locked posts. The app is fully responsive and styled with pure CSS (no frameworks).
 
 ## 🚀 Features
 
@@ -10,6 +10,15 @@ This is a simple blog project built with **Next.js 15**, featuring a clean UI, c
 - Toast message on comment submission
 - Pure CSS styling (no frameworks used)
 - Responsive UI
+
+## 🔐 Authentication / Login
+
+- Some articles are locked and display a lock icon.
+- To access these posts, users must log in.
+- After login, users can:
+- Unlock and read premium content
+- Leave comments & ratings
+- Interact with related articles
 
 ## 📦 Installation
 

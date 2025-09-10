@@ -1,0 +1,178 @@
+[
+  {
+    "slug": "full-body-workouts",
+    "title": "The Ultimate Guide To Full-Body Workouts",
+    "author": "John Doe",
+    "image": "/images/blog1.png",
+    "authorImg": "/images/alex.jpg",
+    "cover": "/images/blogs/one.png",
+    "date": "23 January 2025",
+    "description": "Learn how to do full-body workouts effectively.",
+    "isLocked": true,
+    "content": [
+      "Full-body workouts are not just efficient—they're powerful.",
+      "They allow you to train multiple muscle groups in one session.",
+      "This saves time while improving balance and coordination.",
+      "Beginners benefit by learning compound movements quickly.",
+      "Advanced athletes use them for consistent progress.",
+      "They also help avoid muscle imbalances.",
+      "The key is hitting all major patterns: squat, hinge, push, pull, carry.",
+      "Squats build lower body and core strength.",
+      "Hinges like deadlifts target glutes and hamstrings.",
+      "Push moves include bench press and push-ups.",
+      "Pull moves include pull-ups and rows.",
+      "Carries like farmer’s walks improve grip and posture.",
+      "You can train 2, 3, or 4 days per week.",
+      "A 3-day split is most recommended.",
+      "Example: Monday, Wednesday, Friday full-body sessions.",
+      "Each workout should cover all patterns with compound lifts.",
+      "Add isolation for arms and shoulders if needed.",
+      "A sample routine includes squats, bench press, pull-ups, and curls.",
+      "Start each session with mobility and core activation."
+    ],
+     "testimonials": [
+      {
+        "name": "Alex Carter",
+        "img": "/images/alex.jpg",
+        "text": "Full-body workouts helped me build overall strength and prevent injuries. Highly recommend this approach!"
+      },
+      {
+        "name": "Emily Stone",
+        "img": "/images/alex.jpg",
+        "text": "In just 3 months, I’ve improved my endurance and feel stronger every day!"
+      }
+    ]
+  },
+  {
+    "slug": "better-cardio-sessions",
+    "title": "5 Tips for Better Cardio Sessions",
+    "author": "Jane Smith",
+    "authorImg": "/images/alex.jpg",
+    "image": "/images/blog2.png",
+     "cover": "/images/blogs/two.png",
+    "date": "5 February 2025",
+    "description": "Improve your cardio performance with these tips.",
+    "isLocked": false,
+    "content": [
+      "Cardio training is essential for a strong heart and lungs.",
+      "It improves stamina, endurance, and overall fitness.",
+      "But many people do cardio incorrectly.",
+      "Doing the same routine daily can cause burnout.",
+      "Varying intensity helps long-term progress.",
+      "Try mixing steady-state and interval training.",
+      "Steady-state means jogging, cycling, or walking at moderate pace.",
+      "Interval training alternates high and low intensity.",
+      "HIIT burns calories fast and improves VO2 max.",
+      "Warm up for at least 5 minutes before cardio.",
+      "Cooling down prevents dizziness and helps recovery.",
+      "Hydration is key during cardio sessions.",
+      "Wear proper shoes to avoid joint strain.",
+      "Posture matters—keep chest up and core engaged.",
+      "Don’t overtrain; listen to your body signals.",
+      "Include both short and long cardio sessions weekly.",
+      "Aim for 150 minutes of cardio per week.",
+      "Tracking heart rate helps optimize effort.",
+      "Consistent cardio leads to long-term vitality and energy."
+    ],
+     "testimonials": [
+      {
+        "name": "Alex Carter",
+        "img": "/images/alex.jpg",
+        "text": "Full-body workouts helped me build overall strength and prevent injuries. Highly recommend this approach!"
+      },
+      {
+        "name": "Emily Stone",
+        "img": "/images/alex.jpg",
+        "text": "In just 3 months, I’ve improved my endurance and feel stronger every day!"
+      }
+    ]
+  },
+  {
+    "slug": "nutrition-for-fitness",
+    "title": "Essential Nutrition Tips for Fitness Enthusiasts",
+    "author": "Alice Brown",
+    "cover": "/images/blogs/third.png",
+    "image": "/images/blog3.png",
+    "authorImg": "/images/alex.jpg",
+    "date": "12 March 2025",
+    "description": "Fuel your workouts and recovery with proper nutrition.",
+    "isLocked": true,
+    "content": [
+      "Proper nutrition is the foundation of fitness success.",
+      "Without the right fuel, your workouts will suffer.",
+      "Protein is essential for muscle repair and growth.",
+      "Aim for lean sources like chicken, fish, and legumes.",
+      "Carbohydrates provide energy for high-intensity training.",
+      "Whole grains, fruits, and vegetables are best.",
+      "Healthy fats support hormones and recovery.",
+      "Include nuts, seeds, olive oil, and avocado.",
+      "Hydration is crucial—drink water before, during, and after exercise.",
+      "Electrolytes help prevent cramping during long sessions.",
+      "Timing your meals matters for performance.",
+      "Eat a balanced meal 2–3 hours before a workout.",
+      "A small snack 30–60 minutes before exercise can boost energy.",
+      "Post-workout meals aid in recovery and glycogen replenishment.",
+      "Include protein and carbs after intense training.",
+      "Supplements can help but aren’t a replacement for real food.",
+      "Consider whey protein, creatine, or multivitamins if needed.",
+      "Track your macros if your goal is fat loss or muscle gain.",
+      "Adjust calories based on activity level and goals."
+    ],
+     "testimonials": [
+      {
+        "name": "Alex Carter",
+        "img": "/images/alex.jpg",
+        "text": "Full-body workouts helped me build overall strength and prevent injuries. Highly recommend this approach!"
+      },
+      {
+        "name": "Emily Stone",
+        "img": "/images/alex.jpg",
+        "text": "In just 3 months, I’ve improved my endurance and feel stronger every day!"
+      }
+    ]
+  },
+  {
+    "slug": "mental-health-and-fitness",
+    "title": "How Fitness Improves Mental Health",
+    "author": "Michael Lee",
+    "authorImg": "/images/alex.jpg",
+    "image": "/images/blog4.png",
+     "cover": "/images/blogs/four.png",
+    "date": "25 March 2025",
+    "description": "Explore the connection between exercise and mental wellbeing.",
+    "isLocked": false,
+    "content": [
+      "Exercise isn’t just for physical health—it benefits your mind too.",
+      "Regular workouts reduce stress and anxiety levels.",
+      "Cardio releases endorphins, which are natural mood boosters.",
+      "Strength training can improve self-esteem and confidence.",
+      "Group exercises foster social connections and support.",
+      "Yoga and Pilates combine movement with mindfulness.",
+      "Meditation after workouts enhances relaxation.",
+      "Exercise improves sleep quality and duration.",
+      "Better sleep leads to improved focus and memory.",
+      "Physical activity increases energy levels throughout the day.",
+      "Consistent workouts reduce symptoms of depression.",
+      "Outdoor exercises provide fresh air and sunlight exposure.",
+      "Sunlight boosts vitamin D, which supports mental health.",
+      "Exercise can act as a healthy coping mechanism for stress.",
+      "It helps in regulating hormones like cortisol and adrenaline.",
+      "Tracking progress in fitness provides a sense of accomplishment.",
+      "Goal setting and achieving milestones enhance motivation.",
+      "Mind-body activities like tai chi integrate balance and focus.",
+      "Endorphins released during exercise improve mood naturally."
+    ],
+     "testimonials": [
+      {
+        "name": "Alex Carter",
+        "img": "/images/alex.jpg",
+        "text": "Full-body workouts helped me build overall strength and prevent injuries. Highly recommend this approach!"
+      },
+      {
+        "name": "Emily Stone",
+        "img": "/images/alex.jpg",
+        "text": "In just 3 months, I’ve improved my endurance and feel stronger every day!"
+      }
+    ]
+  }
+]
