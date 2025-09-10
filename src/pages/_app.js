@@ -7,7 +7,7 @@ import {
 
 export default function App({ Component, pageProps }) {
   return <>
-    <ClerkProvider>
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <Header />
       <Component {...pageProps} />
     </ClerkProvider>
