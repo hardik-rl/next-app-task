@@ -8,7 +8,7 @@ const Header = () => {
         <header className="flex justify-end p-4 bg-gray-100">
             <SignedOut>
                 <SignInButton mode="redirect">
-                    <button className="login-btn btn">
+                    <button className="login-btn">
                         Login <LogIn size={20} />
                     </button>
                 </SignInButton>

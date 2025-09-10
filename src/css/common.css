@@ -365,6 +365,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
   gap: 4px;
   margin-bottom: 4px;
   text-transform: uppercase;
