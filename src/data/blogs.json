@@ -33,12 +33,12 @@
      "testimonials": [
       {
         "name": "Alex Carter",
-        "image": "/images/alex.jpg",
+        "img": "/images/alex.jpg",
         "text": "Full-body workouts helped me build overall strength and prevent injuries. Highly recommend this approach!"
       },
       {
         "name": "Emily Stone",
-        "image": "/images/alex.jpg",
+        "img": "/images/alex.jpg",
         "text": "In just 3 months, I’ve improved my endurance and feel stronger every day!"
       }
     ]
@@ -77,12 +77,12 @@
      "testimonials": [
       {
         "name": "Alex Carter",
-        "image": "/images/authors/alex.jpg",
+        "img": "/images/alex.jpg",
         "text": "Full-body workouts helped me build overall strength and prevent injuries. Highly recommend this approach!"
       },
       {
         "name": "Emily Stone",
-        "image": "/images/authors/emily.jpg",
+        "img": "/images/alex.jpg",
         "text": "In just 3 months, I’ve improved my endurance and feel stronger every day!"
       }
     ]
@@ -121,12 +121,12 @@
      "testimonials": [
       {
         "name": "Alex Carter",
-        "image": "/images/authors/alex.jpg",
+        "img": "/images/alex.jpg",
         "text": "Full-body workouts helped me build overall strength and prevent injuries. Highly recommend this approach!"
       },
       {
         "name": "Emily Stone",
-        "image": "/images/authors/emily.jpg",
+        "img": "/images/alex.jpg",
         "text": "In just 3 months, I’ve improved my endurance and feel stronger every day!"
       }
     ]
@@ -165,12 +165,12 @@
      "testimonials": [
       {
         "name": "Alex Carter",
-        "image": "/images/authors/alex.jpg",
+        "img": "/images/alex.jpg",
         "text": "Full-body workouts helped me build overall strength and prevent injuries. Highly recommend this approach!"
       },
       {
         "name": "Emily Stone",
-        "image": "/images/authors/emily.jpg",
+        "img": "/images/alex.jpg",
         "text": "In just 3 months, I’ve improved my endurance and feel stronger every day!"
       }
     ]

@@ -19,13 +19,14 @@ const Testimonial = ({testimonials}) => {
     );
   };
 
-  const { name, image, text } = testimonials[currentIndex];
+  const { name, img, text } = testimonials[currentIndex];
+console.log({img: img}, name, text);
 
   return (
     <div className="post-testimonial">
       <div className="post-testimonial__slider">
         <h4>About {name}</h4>
-        <Image src={image} alt={name} width={100} height={100} />
+        <Image src={img} alt={name} width={100} height={100} />
         <p>{text}</p>
       </div>
       <div className="post-testimonial__btn">
