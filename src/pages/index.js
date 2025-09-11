@@ -4,7 +4,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <>
-       <Head>
+      <Head>
         <title>Home | Blog App</title>
         <meta
           name="description"

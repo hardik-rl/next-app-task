@@ -18,7 +18,7 @@ export default function Document() {
                     content="blog, articles, next.js, homepage"
                 />
 
-                <link rel="canonical" href="https://v0-new-project-sccvwp1p3kv-git-uichanges-hardik-rls-projects.vercel.app" />
+                {/* <link rel="canonical" href="https://v0-new-project-sccvwp1p3kv-git-uichanges-hardik-rls-projects.vercel.app" /> */}
 
                 <link
                     rel="preload"
