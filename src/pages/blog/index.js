@@ -10,7 +10,7 @@ const blogPage = () => {
         <meta name="description" content="Welcome to the Articles of My Website. Explore our latest blog posts and updates." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
-        <meta name="author" content="Your Name or Company" />
+        <meta name="author" content="Blog App" />
         <meta name="keywords" content="blog, homepage, next.js, articles" />
       </Head>
       <Blog />

@@ -4,14 +4,14 @@ A simple and clean blog project built with Next.js 15, featuring static blog con
 
 ## 🚀 Features
 
-- Static blog pages using `getStaticProps` and `getStaticPaths`
+- Dynamic blog pages using `getServerSideProps`
 - Comment submission with rating selection
 - Custom star icons and emoji feedback
 - Toast message on comment submission
 - Pure CSS styling (no frameworks used)
 - Responsive UI
 
-## 🔐 Authentication / Login
+## 🔐 Authentication (Clerk lib) / Login
 
 - Some articles are locked and display a lock icon.
 - To access these posts, users must log in.
@@ -24,8 +24,8 @@ A simple and clean blog project built with Next.js 15, featuring static blog con
 
 ```bash
 # Clone the repo
-git clone https://github.com/hardik-rl/next-app-task
-cd next-app-task
+git clone https://github.com/hardik-rl/blog-app
+cd blog-app
 
 # Install dependencies
 npm install
@@ -34,4 +34,4 @@ npm install
 npm run dev
 
 # Deployment
-https://v0-new-project-sccvwp1p3kv-hardik-rls-projects.vercel.app/
+https://v0-new-project-sccvwp1p3kv-git-uichanges-hardik-rls-projects.vercel.app/blog

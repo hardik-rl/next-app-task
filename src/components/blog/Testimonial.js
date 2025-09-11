@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import { LeftIcon, RightIcon } from '../../shared/Icon';
 import avatar from "../../../public/images/alex.jpg";
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const Testimonial = ({testimonials}) => {
 
@@ -32,13 +33,13 @@ console.log({img: img}, name, text);
       <div className="post-testimonial__btn">
         <div>
           <button onClick={goToPrevious}>
-            <LeftIcon /> Previous
+            <ArrowLeft /> Previous
           </button>
           <p>5 Tips for Better Cardio Sessions</p>
         </div>
         <div>
           <button onClick={goToNext}>
-            Next <RightIcon />
+            Next <ArrowRight />
           </button>
           <p>Meal Prep Basics for Gym Enthusiasts</p>
         </div>
