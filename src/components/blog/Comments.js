@@ -4,6 +4,8 @@ import Button from "@/shared/Button";
 import FormControl from "@/shared/FormControl";
 import HeadingMd from "@/shared/HeadingMd";
 import { FourIcon, GoodIcon, MsgIcon, OneIcon, StarFillIcon, StarOutlineIcon, ThreeIcon, TwoIcon } from "@/shared/Icon";
+import { MessageSquareMore } from "lucide-react";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Comments = () => {
@@ -54,22 +56,22 @@ const Comments = () => {
   };
 
   const getIconByRating = (rating) => {
-  switch (rating) {
-    case 1:
-      return <OneIcon />;
-    case 2:
-      return <TwoIcon />;
-    case 3:
-      return <ThreeIcon />;
-    case 4:
-      return <FourIcon />;
-    default:
-      return null;
-  }
-};
+    switch (rating) {
+      case 1:
+        return <OneIcon />;
+      case 2:
+        return <TwoIcon />;
+      case 3:
+        return <ThreeIcon />;
+      case 4:
+        return <FourIcon />;
+      default:
+        return null;
+    }
+  };
 
 
-useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setComments([
         {
@@ -105,7 +107,7 @@ useEffect(() => {
         <div className="comment-list">
           {comments.map((comment) => (
             <div key={comment.id} className="comments-card">
-              <img src={`https://i.pravatar.cc/40?u=${comment.email}`} alt="user" />
+              <Image src={`https://i.pravatar.cc/40?u=${comment.email}`} alt="user" width={40} height={40} />
               <div className="w-100">
                 <div className="comments-card__content">
                   <span>{comment.name}</span>
@@ -185,7 +187,7 @@ useEffect(() => {
               </div>
             </div>
             <Button type="submit" className="btn--align">
-              <MsgIcon />
+              <MessageSquareMore size={20} />
               Send
             </Button>
           </div>

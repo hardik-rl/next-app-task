@@ -22,7 +22,7 @@ const Card = ({ title, description, author, image, isLocked, isLoading, slug }) 
     return (
       <SignInButton mode="redirect">
         <div className="articles-card">
-          <Image src={image} alt={title} height={229} width={229} />
+          <Image src={image} alt={title} height={229} width={229} loading="lazy" fetchPriority="high"/>
           <div className="articles-card__content">
             <h3>{title}</h3>
             <p className="articles-card__description">{description}</p>

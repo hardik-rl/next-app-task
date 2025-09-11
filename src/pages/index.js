@@ -6,11 +6,11 @@ export default function Home() {
     <>
       <Head>
         <title>Home | Blog App</title>
-        <meta name="description" content="index, Welcome to the homepage of My Website. Explore our latest blog posts and updates." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="UTF-8" />
-        <meta name="author" content="Your Name or Company" />
-        <meta name="keywords" content="blog, homepage, next.js, articles" />
+        <meta
+          name="description"
+          content="Welcome to the homepage of My Website. Explore our latest blog posts and updates."
+        />
+        <link rel="canonical" href="https://v0-new-project-sccvwp1p3kv-git-uichanges-hardik-rls-projects.vercel.app" />
       </Head>
       <Blog />
     </>

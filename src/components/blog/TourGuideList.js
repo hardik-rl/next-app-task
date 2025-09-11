@@ -5,6 +5,7 @@ import guide1 from "../../../public/images/guide1.png";
 import guide2 from "../../../public/images/guide2.png";
 import guide3 from "../../../public/images/guide3.png";
 import Image from 'next/image';
+import { MapPinIcon } from 'lucide-react';
 
 const guides = [
   {
@@ -38,7 +39,7 @@ const TourGuideList = () => {
             <div className="flex-1">
               <h4>{guide.name}</h4>
               <p>
-                <LocationIcon /> {guide.location}
+                <MapPinIcon /> {guide.location}
               </p>
             </div>
           </div>

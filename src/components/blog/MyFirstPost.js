@@ -15,7 +15,7 @@ const MyFirstPost = ({ blog }) => {
         <span>/</span>
         <a href="/blog" className="breadcrumb__active">Articles</a>
         <span>/</span>
-        <span>{blog.title}</span>
+        <h4>{blog.title}</h4>
       </nav>
 
       <HeadingLg>{blog.title}</HeadingLg>
@@ -27,6 +27,7 @@ const MyFirstPost = ({ blog }) => {
           width={1200}
           height={600}
           sizes="(max-width: 768px) 100vw, 1200px"
+          fetchPriority="high"
           priority
         />
       </div>
