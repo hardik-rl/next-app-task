@@ -1,4 +1,4 @@
-# Next.js Blog ✍️
+# Blog App ✍️
 
 A simple and clean blog project built with Next.js 15, featuring static blog content, a comment system, star-based rating, and authentication for locked posts. The app is fully responsive and styled with pure CSS (no frameworks).
 
